@@ -83,7 +83,7 @@ function findPerson(event) {
             return response.json();
         })
         .then((personWithAge) => {
-            console.log(personWithAge);
+            nationalIdFindInput.value = '';
             renderSearchResult(personWithAge);
         })
         .catch(error => {
