@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Osoby</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Přidat osobu</h1>
+    <form>
+      <label for="firstName">Jméno:</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <br>
+      <label for="lastName">Příjmení:</label>
+      <input type="text" id="lastName" name="lastName" required>
+      <br>
+      <label for="nationalId">Rodné číslo:</label>
+      <input type="text" id="nationalId" name="nationalId" placeholder="YYMMDDXXXX nebo YYMMDD/XXXX" required>
+      <br>
+      <button type="submit" id="addPersonButton">Přidat osobu</button>
+    </form>
+    <hr>
+    <h2>Vyhledat osobu:</h2>
+    <form>
+      <label for="nationalIdFind">Rodné číslo:</label>
+      <input id="nationalIdFind" name="nationalIdFind">
+      <button type="submit" id="findPersonButton">Najít osobu</button>
+      </div>
+      <h3>Výsledek hledání</h3>
+      <div id="result">
+      </div>
+    </form>
+    <hr>
+    <h2>Smazat osobu:</h2>
+    <form>
+      <label for="nationalIdDelete">Rodné číslo:</label>
+      <input id="nationalIdDelete" name="nationalIdDelete">
+      <button type="submit" id="deletePersonButton">Odstranit osobu</button>
+    </form>
+    <hr>
+    <h2>Seznam osob:</h2>
+    <ul id="peopleList"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
